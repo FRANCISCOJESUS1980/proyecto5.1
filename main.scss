@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f38a8a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  background-color: azure;
+}
+
+.games {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.game {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 1rem;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+.game img {
+  max-width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+}
+
+.game h2 {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+}
