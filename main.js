@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const musicUrl =
     'https://www.bensound.com/bensound-music/bensound-relaxing.mp3'
 
-  const audio = new Audio(musicUrl)
+  let audio = new Audio(musicUrl)
   audio.loop = true
   audio.volume = 0.5
+
   const isMusicPlaying = localStorage.getItem('isMusicPlaying') === 'true'
 
   if (isMusicPlaying) {
@@ -23,8 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     document.removeEventListener('click', startMusic)
   }
-
   document.addEventListener('click', startMusic)
+
+  const playPauseBtn = document.getElementById('playPauseBtn')
+  const volumeControl = document.getElementById('volumeControl')
+
+  playPauseBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play()
+      playPauseBtn.textContent = 'Pause'
+    } else {
+      audio.pause()
+      playPauseBtn.textContent = 'Play'
+    }
+  })
+
+  volumeControl.addEventListener('input', (event) => {
+    audio.volume = event.target.value
+  })
 
   games.forEach((game) => {
     game.addEventListener('click', (event) => {
