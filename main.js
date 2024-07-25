@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     document.removeEventListener('click', startMusic)
   }
-  document.addEventListener('click', startMusic)
 
   const playPauseBtn = document.getElementById('playPauseBtn')
   const volumeControl = document.getElementById('volumeControl')
