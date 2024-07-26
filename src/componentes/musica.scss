@@ -1,0 +1,25 @@
+.music-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $primary-gap;
+  margin-top: $primary-margin-top;
+}
+
+#playPauseBtn {
+  padding: $secundary-padding;
+  border: none;
+  border-radius: $primary-border-radius;
+  background-color: $secundary-bg-color;
+  color: $primary-color;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#playPauseBtn:hover {
+  background-color: $tercer-bg-color;
+}
+
+#volumeControl {
+  width: 100px;
+}
