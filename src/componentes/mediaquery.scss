@@ -4,11 +4,10 @@
   }
   .game {
     width: auto;
-    height: auto;
+    height: 270px;
 
     h2 {
-      background-color: aqua;
-      font-size: 0.8rem;
+      background-color: rgb(94, 219, 247);
     }
   }
 }
@@ -19,13 +18,9 @@
   }
 
   .game {
-    height: auto;
+    height: 270px;
     h2 {
-      font-size: 0.5rem;
-      text-align: center;
-    }
-    img {
-      height: 40px;
+      margin-bottom: 0;
     }
   }
   .footer-buttons {
